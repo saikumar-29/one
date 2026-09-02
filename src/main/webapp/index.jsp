@@ -737,7 +737,6 @@
 
   // ---------- STATE ----------
   let cartCount = 0;
-  let currentFilter = '';
 
   // ---------- DOM refs ----------
   const categoriesGrid = document.getElementById('categoriesGrid');
@@ -765,4 +764,4 @@
   function renderProducts(list) {
     productsGrid.innerHTML = '';
     if (!list.length) {
-      productsGrid.innerHTML = `<p style="grid-column:1/-1;text-align:center;padding:40px;color:var(--
+      productsGrid.innerHTML = `<p style="grid-column:1/-1;text-align:center;padding:40px;color:var(--gray);">No products found
